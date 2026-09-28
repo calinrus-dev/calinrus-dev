@@ -22,6 +22,6 @@ La actividad del perfil puede incluir mantenimiento automatizado. No demuestra t
 
 ## Contacto
 
-[Instagram @c4linrus](https://www.instagram.com/c4linrus/) · [LinkedIn / calinrus](https://www.linkedin.com/in/calinrus/)
+[Instagram @c4linrus](https://www.instagram.com/c4linrus/) · [LinkedIn / calinrus](https://www.linkedin.com/in/calinrus-dev/)
 
 El dominio personal calinrus.com no se presenta como web activa mientras muestre una página de aparcamiento. El portfolio público está aquí en GitHub.

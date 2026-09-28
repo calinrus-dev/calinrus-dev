@@ -6,7 +6,7 @@ Construyo **aplicaciones de escritorio y móvil, herramientas y videojuegos**. M
 
 Ahora estoy especialmente volcado en **Expo para móvil**, con **Rust y Tauri** en mi trabajo de sistemas y escritorio. **Dart y Flutter** forman una parte importante de mi recorrido y siguen siendo herramientas con las que disfruto construyendo.
 
-[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [**Mi manifiesto →**](docs/MANIFIESTO.md) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/) · [LinkedIn / calinrus](https://www.linkedin.com/in/calinrus/)
+[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [**Mi manifiesto →**](docs/MANIFIESTO.md) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/) · [LinkedIn / calinrus](https://www.linkedin.com/in/calinrus-dev/)
 
 ## Menos adjetivos. Abre una prueba.
 
