@@ -1,8 +1,8 @@
 ![Calin Rus. Software local-first, rendimiento nativo e interfaces accesibles.](assets/calin-rus.svg)
 
-# Soy Calin Rus
+# Calin Rus / Software con criterio.
 
-Construyo **aplicaciones de escritorio y móvil, herramientas y videojuegos**. Me mueven el bajo nivel, la experimentación y el software que responde bien: mentalidad **data-driven**, arquitectura orientada a datos, filosofía **local-first** e interfaces sobrias y accesibles.
+Construyo **aplicaciones de escritorio y móvil, herramientas y videojuegos**. Me tira el bajo nivel y me gusta exprimir la máquina: mentalidad **data-driven**, arquitectura orientada a datos, filosofía **local-first** e interfaces sobrias y accesibles.
 
 Ahora estoy especialmente volcado en **Expo para móvil**, con **Rust y Tauri** en mi trabajo de sistemas y escritorio. **Dart y Flutter** forman una parte importante de mi recorrido y siguen siendo herramientas con las que disfruto construyendo.
 
@@ -36,13 +36,13 @@ Ahora estoy especialmente volcado en **Expo para móvil**, con **Rust y Tauri** 
 
 ## Cómo entiendo el software
 
-**Los recursos tienen un coste.** Me interesan los ciclos, la disposición de datos, las estructuras contiguas, la localidad de memoria y la alineación con las líneas de caché cuando la medición lo justifica. Reducir copias, asignaciones y trabajo repetido forma parte de mi manera de pensar.
+**Si pesa, que trabaje.** Ciclos, disposición de datos, localidad de memoria y alineación con las líneas de caché cuando la medición lo justifica. Me interesa quitar copias, asignaciones y recorridos que sobran. La RAM no es un trastero.
 
-**Las dependencias deben aportar valor.** Puedo dedicar mucho más tiempo a una pieza si con ello consigo una experiencia mejor. También reutilizo soluciones existentes cuando funcionan bien y cumplen lo que necesito. Cuestiono los paquetes pesados y Electron como elección automática; prefiero decidir según el producto y su comportamiento real.
+**Cada dependencia se gana su sitio.** Reutilizo lo que funciona y dedico el tiempo necesario a lo que merece hacerse mejor. Cuestiono los paquetes pesados y Electron como elección automática. El benchmark manda; la comodidad de instalar un paquete todavía no ha demostrado nada.
 
-**El dispositivo importa.** Busco autonomía local, datos y recursos bajo control y continuidad del trabajo. Las bases y servicios externos se incorporan por una necesidad concreta.
+**El usuario ya tiene una máquina. Aprovechémosla.** Datos y recursos bajo control, continuidad local y servicios externos cuando resuelven una necesidad concreta.
 
-**La interfaz debe ayudar.** Densidad útil en escritorio, minimalismo, diseño responsivo y accesibilidad visual: contraste, escalado, foco, teclado y estados comprensibles.
+**Densidad útil. Ruido fuera.** Escritorio con información a mano, móvil adaptado al tacto y accesibilidad visual desde el diseño: contraste, escalado, foco, teclado y estados comprensibles. Un spinner no es una estrategia de rendimiento.
 
 [Leer el manifiesto completo](docs/MANIFIESTO.md) · [Filosofía de desarrollo](docs/FILOSOFIA.md)
 

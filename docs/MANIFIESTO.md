@@ -1,49 +1,57 @@
-# Manifiesto / Ingeniería con intención
+# Manifiesto / Si pesa, que trabaje.
 
 [← Presentación](../README.md)
 
-Quiero construir software que responda, que se pueda entender y que respete la máquina de quien lo usa. Me atraen el bajo nivel, Rust, la disposición de los datos y la posibilidad de mirar debajo de una abstracción para comprender su coste. Me encanta experimentar y sigo aprendiendo.
+Me gusta el software que responde. El que abre, trabaja y se aparta. Me gusta mirar debajo de las abstracciones, entender qué hacen los datos y quitar trabajo que sobra. Rust, bajo nivel, herramientas propias y muchas ganas de seguir aprendiendo.
 
-## Cada ciclo cuenta cuando el trabajo lo necesita
+Tengo unas cuantas manías. Casi todas pasan factura en CPU, memoria o tiempo de usuario.
 
-Una interfaz puede parecer sencilla y esconder una cantidad absurda de trabajo. Me interesa encontrar ese trabajo: lo que se repite, lo que se copia, lo que se asigna y lo que se calcula sin necesidad.
+## 01. La RAM no es un trastero
 
-Pienso en localidad de memoria, estructuras contiguas, alineación con líneas de caché y recorridos de datos. Mis conocimientos de Assembly forman parte de esa curiosidad por cómo ejecuta realmente la máquina. Primero observo el problema; después decido dónde merece la pena bajar de nivel.
+Cada copia, asignación y recorrido tiene un coste. Me interesan la disposición de los datos, las estructuras contiguas, la localidad de memoria y la alineación con las líneas de caché cuando el problema lo exige. Assembly me ayuda a entender qué acaba ejecutando la máquina.
 
-Acepto invertir más esfuerzo en una pieza importante cuando eso reduce un coste que el usuario sufriría en cada sesión. El tiempo de ingeniería y el tiempo de uso no pesan igual: una decisión tomada una vez puede repetirse miles de veces en manos de otras personas.
+Antes de pedir más hardware, reviso qué estoy haciéndole hacer. Un spinner no es una estrategia de rendimiento. Es un círculo pidiendo paciencia.
 
-## Las dependencias tienen que justificar su sitio
+## 02. Cada dependencia se gana su sitio
 
-Un paquete entra por una función concreta. Quiero entender qué añade, qué arrastra, cómo falla y cuánto cuesta mantenerlo. El tamaño, el arranque, la memoria y la complejidad forman parte de la decisión.
+Un paquete entra por lo que resuelve. Se queda por cómo funciona, cuánto cuesta y lo que permite mantener. Quiero saber qué arrastra, cómo falla y quién paga la fiesta cuando deja de funcionar.
 
-Electron no es mi opción por defecto. Para escritorio me atraen Tauri, Rust y las soluciones que me permiten mantener un control más directo sobre el coste de la aplicación. Elegiría una tecnología por lo que exige el producto y por cómo se comporta en él, no por inercia.
+Electron no entra por inercia. En escritorio prefiero explorar Tauri, Rust y soluciones que me den control sobre el coste de la aplicación. Si una herramienta pesada es la elección adecuada, tendrá que demostrarlo en el producto. La comodidad de instalarla aporta poca información sobre la comodidad de usarla.
 
-También soy pragmático: si una herramienta existente resuelve bien el problema y cumple mis requisitos, la uso. Reutilizar buen trabajo es una ventaja. Reescribir solo tiene sentido cuando gano control, rendimiento, claridad o una capacidad que necesito de verdad.
+Añadir capas encima de un problema puede dejar el mismo problema debajo. Eso sí: muy abrigado.
 
-## Data-driven también significa cambiar de opinión
+## 03. El benchmark manda
 
-Una preferencia es un punto de partida. Una medición puede desmontarla. Quiero formular hipótesis, observar tiempos y recursos con una carga concreta y comparar cambios en condiciones equivalentes.
+Perfilar. Medir. Cambiar una cosa. Comparar. Repetir.
 
-Una optimización tiene que mejorar algo que importe. Si añade complejidad sin una mejora útil, también hay que saber descartarla. No convierto un lenguaje, un framework ni una cifra aislada en una religión.
+Datos, carga y condiciones. Una cifra sin contexto es decoración. Si una medición desmonta mi intuición, cambio de idea. También descarto una optimización cuando su complejidad cuesta más que la mejora que aporta.
 
-## Local-first: la máquina del usuario debe tener un papel real
+Acepto invertir más tiempo en una pieza crítica si ahorro un coste que el usuario sufriría en cada sesión. El trabajo de ingeniería se hace una vez; una mala decisión puede ejecutarse miles de veces.
 
-Me gustan las aplicaciones que conservan datos, recursos y continuidad de trabajo en el dispositivo. Quiero que el usuario entienda dónde está su trabajo y pueda conservarlo y exportarlo.
+## 04. Pragmatismo, con el cuchillo afilado
 
-Un servicio externo debe aportar una función concreta. La colaboración y la sincronización pueden necesitar infraestructura remota; la dependencia no debería extenderse por comodidad a cada interacción que podría resolverse localmente.
+Si algo ya existe, funciona bien y cumple lo que necesito, lo uso. Hay demasiado trabajo interesante como para fabricar otra rueda por orgullo.
 
-## Densidad útil, sobriedad y accesibilidad
+Reescribo cuando gano algo concreto: rendimiento, control, claridad o una capacidad que necesito. Conservar una dependencia por costumbre y eliminarla por postureo me parecen dos formas bastante parecidas de dejar de pensar.
 
-Quiero escritorio con información a mano: jerarquía, navegación rápida y herramientas que ayuden a pensar. El minimalismo debe quitar ruido y pasos innecesarios. El diseño responsivo adapta el recorrido al contexto, especialmente en móvil.
+## 05. El usuario ya tiene una máquina. Aprovechémosla
 
-La accesibilidad visual es una prioridad personal. Texto legible y escalable, contraste, foco, teclado, estados claros y movimiento reducido forman parte del producto. Exprimir recursos y cuidar a quien utiliza la interfaz son dos partes del mismo trabajo.
+Local-first: datos y recursos cerca del trabajo, continuidad, control y exportación. Me interesa que una aplicación conserve una experiencia útil en el dispositivo.
 
-## Aprender construyendo mis propias herramientas
+Una base de datos externa o un servicio remoto deben resolver una necesidad real. Colaboración y sincronización pueden justificar infraestructura. Convertir cada clic en una dependencia de red exige algo más que encogerse de hombros.
 
-Mi recorrido también pasa por experimentar con Minecraft. Dart y Flutter han tenido una etapa importante en mi trabajo y sigo disfrutando con ellos. Ahora estoy especialmente volcado en Expo para aplicaciones móviles, mientras Rust y el bajo nivel mantienen un lugar central en mi interés técnico.
+## 06. Densidad útil. Ruido fuera
 
-Me gusta hacer mis propias herramientas. Buena parte de ese trabajo vive en proyectos privados o experimentos que no publico. Aquí enseño una selección de productos, decisiones y resultados, no toda mi actividad. Prefiero que un proyecto explique lo que permite hacer a convertir el número de líneas de código en una medida de valor.
+En escritorio quiero información a mano, jerarquía y recorridos rápidos. En móvil, una interacción adaptada al espacio y al tacto. Minimalismo es quitar estorbos; esconder herramientas necesarias también tiene un coste.
 
-## La responsabilidad de elegir
+La accesibilidad visual es una prioridad personal: contraste, texto escalable, foco visible, teclado y estados que se entiendan sin adivinar colores. La letra microscópica no se vuelve elegante por tener mucho margen alrededor.
 
-Quiero entender lo suficiente para elegir con criterio: medir con honestidad, reutilizar buenas soluciones y asumir el trabajo adicional cuando el producto lo necesita. La ambición técnica se demuestra en lo que una persona puede hacer con el software y en lo bien que responde cuando lo necesita.
+## 07. Construir, experimentar, aprender
+
+Mi recorrido también pasa por Minecraft. Dart y Flutter han tenido mucho peso y sigo disfrutando con ellos. Ahora estoy especialmente metido en Expo para móvil, mientras Rust y el bajo nivel siguen tirando de mi curiosidad.
+
+Hago mis propias herramientas y muchas se quedan en privado. Este perfil enseña una selección. Contar líneas puede ser entretenido; prefiero enseñar qué resuelve el programa y cómo responde cuando se le exige.
+
+## El criterio
+
+Exprimir donde importa. Reutilizar lo que funciona. Medir antes de presumir. Entender lo suficiente para elegir. Y asumir el trabajo extra cuando haga falta para que el software esté a la altura.
