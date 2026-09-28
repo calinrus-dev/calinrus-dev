@@ -6,7 +6,21 @@ Construyo **aplicaciones de escritorio y móvil, herramientas y videojuegos**. M
 
 Ahora estoy especialmente volcado en **Expo para móvil**, con **Rust y Tauri** en mi trabajo de sistemas y escritorio. **Dart y Flutter** forman una parte importante de mi recorrido y siguen siendo herramientas con las que disfruto construyendo.
 
-[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [**Mi manifiesto →**](docs/MANIFIESTO.md) · [calinrus.com](https://calinrus.com) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/)
+[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [**Mi manifiesto →**](docs/MANIFIESTO.md) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/) · [LinkedIn / calinrus](https://www.linkedin.com/in/calinrus/)
+
+## Menos adjetivos. Abre una prueba.
+
+Estos proyectos conservan su implementación principal privada. Ahora publico piezas seleccionadas y referencias ejecutables, con su origen y sus límites a la vista.
+
+- **Atelier 3D:** [mapa real de atajos, alias y conflictos](https://calinrus-dev.github.io/atelier-3d-showcase/).
+- **Morgenstern:** [entrega EPUB/audio sintética y validador multimedia](https://calinrus-dev.github.io/morgenstern-showcase/).
+- **BarrientosCare:** [web en producción](https://barrientoscare.es) y [filtros extraídos con variantes de precio](https://calinrus-dev.github.io/barrientoscare-showcase/).
+- **KanjiZen:** [evaluador real de respuestas en romaji y kana](https://calinrus-dev.github.io/kanjizen-showcase/).
+- **Etherune:** [laboratorio de gesto y cancelación del movimiento](https://calinrus-dev.github.io/etherune-showcase/).
+- **Nhur:** [referencia local de Entradas modulares](https://calinrus-dev.github.io/nhur-showcase/).
+- **Malphas:** [Rust escribe un framebuffer; Dart verifica la misma memoria](https://github.com/calinrus-dev/malphas-showcase/tree/main/samples/ffi).
+
+Cada caso enlaza código, pruebas y ejecuciones de CI. [Cómo leer la evidencia](docs/EVIDENCIA.md).
 
 ## Productos y proyectos principales
 
@@ -93,6 +107,6 @@ Muchas de mis herramientas y experimentos viven en privado. Este perfil es una s
 
 ## Qué comparto aquí
 
-Documentación, componentes, decisiones de diseño, diagramas y material visual. Cada caso declara su estado y distingue capturas reales de ilustraciones. La implementación de los productos, sus integraciones internas y sus datos permanecen privados.
+Código público seleccionado, pruebas ejecutables, decisiones de diseño y demostraciones. Cada caso distingue componentes extraídos, referencias nuevas, capturas reales e ilustraciones. El núcleo de los productos, sus integraciones internas y sus datos permanecen privados.
 
 <sub>La actividad del perfil puede incluir mantenimiento automatizado; no representa necesariamente trabajo manual diario.</sub>

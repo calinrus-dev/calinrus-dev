@@ -55,3 +55,7 @@ Hago mis propias herramientas y muchas se quedan en privado. Este perfil enseña
 ## El criterio
 
 Exprimir donde importa. Reutilizar lo que funciona. Medir antes de presumir. Entender lo suficiente para elegir. Y asumir el trabajo extra cuando haga falta para que el software esté a la altura.
+
+## Una afirmación trae su prueba
+
+Si hablo de rendimiento, necesito carga, entorno y medida. Si publico un componente, enseño cómo ejecutarlo y qué rompe. Un badge verde prueba lo que ejecuta su workflow, nada más. La gráfica de actividad no es un benchmark de oficio.
