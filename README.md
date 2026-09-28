@@ -1,66 +1,98 @@
-![Calin Rus. Menos dependencia. Más control. Software local-first, rendimiento nativo e interfaces accesibles.](assets/calin-rus.svg)
+![Calin Rus. Software local-first, rendimiento nativo e interfaces accesibles.](assets/calin-rus.svg)
 
 # Soy Calin Rus
 
-Desarrollo **aplicaciones de escritorio y móvil, herramientas, sistemas y videojuegos**. Me gusta convertir problemas concretos en software que se pueda entender, controlar y seguir mejorando.
+Construyo **aplicaciones de escritorio y móvil, herramientas y videojuegos**. Me mueven el bajo nivel, la experimentación y el software que responde bien: mentalidad **data-driven**, arquitectura orientada a datos, filosofía **local-first** e interfaces sobrias y accesibles.
 
-Mi forma de construir combina **mentalidad data-driven, arquitectura orientada a datos y filosofía local-first**. Busco rendimiento nativo, autonomía y una experiencia sobria: información útil a mano, pocos pasos innecesarios y decisiones de diseño que respeten a quien usa la aplicación.
+Ahora estoy especialmente volcado en **Expo para móvil**, con **Rust y Tauri** en mi trabajo de sistemas y escritorio. **Dart y Flutter** forman una parte importante de mi recorrido y siguen siendo herramientas con las que disfruto construyendo.
 
-[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [calinrus.com](https://calinrus.com) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/)
+[**Portfolio y demostraciones →**](https://github.com/calinrus-dev/portfolio) · [**Mi manifiesto →**](docs/MANIFIESTO.md) · [calinrus.com](https://calinrus.com) · [Instagram @c4linrus](https://www.instagram.com/c4linrus/)
 
-## Datos, ciclos y rendimiento
+## Productos y proyectos principales
 
-Para mí, optimizar empieza por entender qué ocurre: definir una carga, medir el comportamiento y comparar los cambios. Me interesan tanto los tiempos de respuesta como el consumo de memoria y el trabajo que puede evitarse.
+### [Atelier 3D](https://github.com/calinrus-dev/atelier-3d-showcase)
 
-En sistemas nativos pienso en **disposición de datos, estructuras contiguas, localidad de memoria y alineación con las líneas de caché cuando la medición lo justifica**. Cuidar copias, asignaciones y recorridos repetidos forma parte de esa mentalidad. Mis conocimientos de **Assembly** me ayudan a relacionar las abstracciones con la ejecución de la máquina.
+**Mi producto principal: un estudio 3D completo, disponible bajo licencia.** Reúne edición de espacios, materiales e iluminación, recorridos navegables y una cadena de entrega con imágenes, vídeo, planos PDF a escala y mediciones. La versión 1.0 incorpora emisión y renovación de licencias; una aplicación de escritorio que conecta diseño, presentación y entrega.
 
-## Local-first y autonomía
+### [Morgenstern](https://github.com/calinrus-dev/morgenstern-showcase)
 
-Prefiero que una aplicación conserve una experiencia útil en el dispositivo, con datos y recursos bajo control. La persistencia local, la continuidad del trabajo y la posibilidad de exportar importan tanto como la interfaz.
+**Una línea de producción editorial con IA.** Automatiza el trabajo desde la materia prima narrativa hasta la generación de libros, la revisión y la exportación EPUB y audiolibro. Está pensado para coordinar producción de contenido a escala, conservar el contexto de cada obra y mantener al autor al mando de las decisiones.
 
-Cada base de datos externa, servicio o dependencia añade decisiones y costes. Los incorporo cuando tienen una función clara y procuro reducir las dependencias que no aportan valor. El alcance depende del producto: colaboración, distribución o sincronización pueden necesitar servicios remotos.
+### [BarrientosCare](https://github.com/calinrus-dev/barrientoscare-showcase)
 
-## Interfaces sobrias, densas y accesibles
+**Una web comercial real, publicada y en funcionamiento.** BarrientosCare une identidad visual, catálogo de belleza, búsqueda y filtros, variantes, cesta y Club con las herramientas que sostienen la gestión del negocio. Un producto desplegado que se puede visitar en [barrientoscare.es](https://barrientoscare.es).
 
-En escritorio me gustan las interfaces con **densidad de información útil**: comparar, encontrar y actuar sin recorrer pantallas innecesarias. Esa densidad necesita jerarquía, contraste, texto legible y navegación rápida.
+### [Etherune](https://github.com/calinrus-dev/etherune-showcase)
 
-En móvil adapto el recorrido al espacio, al tacto y al contexto. Me interesa el **diseño minimalista y responsivo** que quita ruido y conserva las señales necesarias para entender qué está pasando.
+**Mi videojuego en desarrollo.** Combate elemental 2D con portadores, Resonancia, transformaciones y movimiento aéreo, acompañado de laboratorio y editor de escenarios. Estoy trabajando con una diseñadora 2D en su evolución visual.
 
-La **accesibilidad visual es una prioridad personal**. Contraste, escalado, foco visible, teclado, movimiento reducido y estados que no dependan solo del color son criterios de producto. También se aplican a editores y videojuegos. Su funcionamiento con tecnologías de asistencia requiere pruebas específicas.
+### [KanjiZen](https://github.com/calinrus-dev/kanjizen-showcase)
+
+**Japonés convertido en entrenamiento.** Conecta reconocimiento, recuerdo activo y memoria gestual: aprender con guía, responder bajo presión y abrir nuevas etapas al demostrar dominio. La primera ruta jugable combina hiragana, MECA y Flick, con XP, colección y progreso local.
+
+### [Nhur](https://github.com/calinrus-dev/nhur-showcase)
+
+**Una alternativa a Amino para encontrar tu comunidad.** Nhur combina espacios temáticos y nichos con conversación inspirada en Discord, descubrimiento tipo Reddit y Entradas modulares al estilo Notion. La idea es que puedas crear tu comunidad y reunirte con personas que comparten tus intereses. Antes se conocía como Glow; hoy Glow forma parte de su identidad y su lenguaje visual.
+
+## Cómo entiendo el software
+
+**Los recursos tienen un coste.** Me interesan los ciclos, la disposición de datos, las estructuras contiguas, la localidad de memoria y la alineación con las líneas de caché cuando la medición lo justifica. Reducir copias, asignaciones y trabajo repetido forma parte de mi manera de pensar.
+
+**Las dependencias deben aportar valor.** Puedo dedicar mucho más tiempo a una pieza si con ello consigo una experiencia mejor. También reutilizo soluciones existentes cuando funcionan bien y cumplen lo que necesito. Cuestiono los paquetes pesados y Electron como elección automática; prefiero decidir según el producto y su comportamiento real.
+
+**El dispositivo importa.** Busco autonomía local, datos y recursos bajo control y continuidad del trabajo. Las bases y servicios externos se incorporan por una necesidad concreta.
+
+**La interfaz debe ayudar.** Densidad útil en escritorio, minimalismo, diseño responsivo y accesibilidad visual: contraste, escalado, foco, teclado y estados comprensibles.
+
+[Leer el manifiesto completo](docs/MANIFIESTO.md) · [Filosofía de desarrollo](docs/FILOSOFIA.md)
 
 ## Stack y áreas de conocimiento
 
 - **Sistemas y escritorio:** Rust, Tauri, Python, Textual y PyQt.
-- **Aplicaciones multiplataforma:** Flutter, Dart, React Native, Expo y TypeScript.
+- **Móvil y multiplataforma:** Expo, React Native, TypeScript, Flutter y Dart.
 - **Web:** React, Next.js, TypeScript y diseño responsivo.
 - **Videojuegos y gráficos:** Godot, GDScript, Bevy, Rust y WebGL.
 - **Datos y bajo nivel:** SQLite, PostgreSQL, arquitectura orientada a datos y conocimientos de Assembly.
-- **Diseño:** interfaces sobrias, jerarquía visual, densidad de información, minimalismo y accesibilidad.
+- **Diseño:** interfaces sobrias, densidad de información y accesibilidad visual.
 
-Godot está presente en Etherune; Bevy forma parte de mis áreas de trabajo y exploración. El estado de cada proyecto indica qué se ha construido y qué se ha verificado.
+[Stack explicado por áreas](docs/STACK.md)
 
-[Filosofía de desarrollo](docs/FILOSOFIA.md) · [Stack explicado por áreas](docs/STACK.md)
+## Mi recorrido
 
-## Aplicaciones, sistemas y videojuegos
+He experimentado con Minecraft, pasado por una etapa muy centrada en Dart y Flutter y seguido ampliando mi trabajo hacia Rust, herramientas nativas y aplicaciones con Expo. Me gusta entender cómo funcionan las piezas, probar ideas y construir mis propias soluciones. Sigo aprendiendo.
 
-- [**Etherune**](https://github.com/calinrus-dev/etherune-showcase) — combate elemental, portadores, arena local y creación de escenarios en Godot.
-- [**Atelier 3D**](https://github.com/calinrus-dev/atelier-3d-showcase) — edición espacial, materiales y recorridos de presentación con Tauri, Rust y WebGL.
-- [**Malphas**](https://github.com/calinrus-dev/malphas-showcase) — motor nativo y herramientas visuales con Rust, Flutter y Dart.
-- [**Nhur**](https://github.com/calinrus-dev/nhur-showcase) — Entornos, Canales, Máscaras e identidad contextual.
-- [**KanjiZen**](https://github.com/calinrus-dev/kanjizen-showcase) — entrenamiento de kana con MECA, Flick y progreso local.
-- [**Caja Clara**](https://github.com/calinrus-dev/caja-clara-showcase) — jornada, inventario, calendario e informes desde el móvil.
+Muchas de mis herramientas y experimentos viven en privado. Este perfil es una selección de lo que construyo; cada caso público enseña el producto, su intención y la evidencia que puedo compartir.
 
-## Herramientas y exploraciones
+## Otras soluciones
 
-- [**Morgenstern**](https://github.com/calinrus-dev/morgenstern-showcase) — organización de proyectos narrativos, borradores y revisión editorial.
-- [**ModelLedger**](https://github.com/calinrus-dev/modelledger-showcase) — investigación de modelos y planes de IA con evidencia e histórico; integración en desarrollo.
-- [**BarrientosCare**](https://github.com/calinrus-dev/barrientoscare-showcase) — catálogo, selección de productos y gestión comercial.
-- [**ECB Tool**](https://github.com/calinrus-dev/ecb-tool-showcase) — recursos musicales, conversión audiovisual y colas de publicación.
-- [**Glow**](https://github.com/calinrus-dev/glow-showcase) — exploración histórica de espacios sociales e identidad contextual.
-- [**Glow Design**](https://github.com/calinrus-dev/glow-design-showcase) — investigación de componentes, temas y movimiento en Flutter y Dart.
+### [Caja Clara](https://github.com/calinrus-dev/caja-clara-showcase)
+
+**Una jornada de trabajo completa, conectada en el móvil.** Ventas, inventario, devoluciones, calendario e informes conservan el contexto de cada operación. Diseño orientado a actuar con rapidez y revisar después con claridad, con datos locales.
+
+### [ModelLedger](https://github.com/calinrus-dev/modelledger-showcase)
+
+**Entender qué hay detrás de una ficha de IA.** Modelos, planes, fuentes e histórico para comparar condiciones y hacer visible la incertidumbre. Investigación de producto con integración V2 todavía en desarrollo.
+
+## Experimentos y proyectos anteriores
+
+### [Malphas](https://github.com/calinrus-dev/malphas-showcase)
+
+**Experimento: una consola de fantasía moderna.** Investigación con Dart FFI, Flutter y Rust para explorar un entorno en el que crear y ejecutar juegos propios. Un laboratorio técnico secundario dentro del portfolio.
+
+### [Glow](https://github.com/calinrus-dev/glow-showcase)
+
+**El origen y la identidad visual de Nhur.** Glow fue el nombre anterior de la exploración social. Sus ideas y su estética siguen formando parte de Nhur; este repositorio conserva esa etapa del recorrido.
+
+### [Glow Design](https://github.com/calinrus-dev/glow-design-showcase)
+
+**La investigación visual detrás de Glow.** Componentes, temas y movimiento en Flutter y Dart que documentan el recorrido del lenguaje visual asociado a Nhur.
+
+### [ECB Tool](https://github.com/calinrus-dev/ecb-tool-showcase)
+
+**Una mesa de producción para creadores musicales.** Organiza audio, portadas y metadatos, prepara piezas audiovisuales y hace visible la cola de trabajo hasta la publicación autorizada.
 
 ## Qué comparto aquí
 
-Los casos de estudio reúnen documentación, componentes, decisiones de diseño, diagramas y material visual. Cada uno declara su estado y diferencia capturas reales de ilustraciones. La implementación de los productos, sus integraciones internas y sus datos permanecen en repositorios privados.
+Documentación, componentes, decisiones de diseño, diagramas y material visual. Cada caso declara su estado y distingue capturas reales de ilustraciones. La implementación de los productos, sus integraciones internas y sus datos permanecen privados.
 
 <sub>La actividad del perfil puede incluir mantenimiento automatizado; no representa necesariamente trabajo manual diario.</sub>
